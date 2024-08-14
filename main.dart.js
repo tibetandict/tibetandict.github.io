@@ -27564,12 +27564,13 @@ this.b=b},
 Ly:function Ly(a){this.a=a},
 abc:function abc(){},
 abb:function abb(){},
-auh(a,b,c){return new A.Jw(a,b,c,null)},
-Jw:function Jw(a,b,c,d){var _=this
+auh(a,b,c,d){return new A.Jw(a,b,d,c,null)},
+Jw:function Jw(a,b,c,d,e){var _=this
 _.c=a
 _.d=b
 _.e=c
-_.a=d},
+_.f=d
+_.a=e},
 r0:function r0(a,b,c){this.c=a
 this.d=b
 this.a=c},
@@ -91975,7 +91976,7 @@ r.seH(0,"")
 q.seH(0,"")}p=$.bL()
 o=A.dQ(a?"Edit word":"New word",l,l,l,l,l,l)
 n=t.p
-q=A.ahx(A.qQ(A.a([A.auh(s,"Tibetan Word",B.mn),B.eg,A.auh(r,"Tibetan Explanation",B.mn),B.eg,A.auh(q,"Tibetan Synonyms",B.mm)],n),B.bW,B.bx,B.dZ),l)
+q=A.ahx(A.qQ(A.a([A.auh(s,"Tibetan Word",l,B.mn),B.eg,A.auh(r,"Tibetan Explanation",3,B.mn),B.eg,A.auh(q,"Synonyms (Comma Separated)",l,B.mm)],n),B.bW,B.bx,B.dZ),l)
 r=t.z
 s=A.lh(B.ek,A.nN(A.xL(p),r),l)
 A.mg(p,A.vK(A.a([s,A.lh(A.dQ(a?"Edit":"Add",l,l,l,l,l,l),new A.ab3(m,a,b),l)],n),q,o),r)},
@@ -92054,8 +92055,8 @@ $0(){var s=$.bL(),r=t.z
 A.mg(s,A.vK(A.a([A.lh(B.ek,A.nN(A.xL(s),r),null)],t.p),B.a6I,B.a6J),r)},
 $S:0}
 A.Jw.prototype={
-V(a){var s=null
-return A.aBX(!1,this.c,A.azX(s,s,s,B.KC,s,s,s,s,!0,new A.hS(4,A.o0(8),new A.b6(B.eF,1,B.A,-1)),s,s,s,s,s,s,s,s,s,s,s,new A.hS(4,A.o0(8),new A.b6(B.eF,2,B.A,-1)),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s,s,s,s,s,s,s,s),s,s,s,s,this.e)}}
+V(a){var s=this,r=null
+return A.aBX(!1,s.c,A.azX(r,r,r,B.KC,r,r,r,r,!0,new A.hS(4,A.o0(8),new A.b6(B.eF,1,B.A,-1)),r,r,r,r,r,r,r,r,r,r,r,new A.hS(4,A.o0(8),new A.b6(B.eF,2,B.A,-1)),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s.d,r,r,r,r,r,r,r,r,r,r,r,r,r),r,s.f,r,r,s.e)}}
 A.r0.prototype={
 V(a){var s=null,r=A.dQ(this.d,s,s,s,s,s,s)
 return A.ave(s,A.azP(this.c,s),s,s,s,r,s)}}
