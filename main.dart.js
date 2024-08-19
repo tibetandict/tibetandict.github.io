@@ -19767,8 +19767,8 @@ break $label0$0}if("TextInputAction.continueAction"===a){s=B.a39
 break $label0$0}if("TextInputAction.join"===a){s=B.a3a
 break $label0$0}if("TextInputAction.route"===a){s=B.a33
 break $label0$0}if("TextInputAction.emergencyCall"===a){s=B.a34
-break $label0$0}if("TextInputAction.done"===a){s=B.mm
-break $label0$0}if("TextInputAction.newline"===a){s=B.G1
+break $label0$0}if("TextInputAction.done"===a){s=B.G1
+break $label0$0}if("TextInputAction.newline"===a){s=B.mm
 break $label0$0}s=A.U(A.os(A.a([A.kr("Unknown text input action: "+a)],t.E)))}return s},
 aSy(a){var s
 $label0$0:{if("FloatingCursorDragState.start"===a){s=B.oI
@@ -27563,12 +27563,13 @@ this.b=b},
 Ly:function Ly(a){this.a=a},
 abc:function abc(){},
 abb:function abb(){},
-ayM(a,b,c){return new A.Jw(a,b,c,null)},
-Jw:function Jw(a,b,c,d){var _=this
+ayM(a,b,c,d){return new A.Jw(a,b,d,c,null)},
+Jw:function Jw(a,b,c,d,e){var _=this
 _.c=a
 _.d=b
 _.e=c
-_.a=d},
+_.f=d
+_.a=e},
 r_:function r_(a,b,c){this.c=a
 this.d=b
 this.a=c},
@@ -73545,7 +73546,7 @@ m=p.ax
 l=p.ay
 k=p.a2
 p=p.p4
-if(p==null)p=o.j(0,B.mn)?B.G1:B.mm
+if(p==null)p=o.j(0,B.mn)?B.mm:B.G1
 j=h.a
 i=j.dy
 j=j.a0
@@ -91971,7 +91972,7 @@ r.sff(0,J.cz(J.au(J.au(q.gl(0),b),"tibetan_synonyms")))}else{s.sff(0,"")
 r.sff(0,"")}q=$.bQ()
 p=A.dQ(a?"Edit word":"New word",l,l,l,l,l,l)
 o=t.p
-r=A.ahx(A.qP(A.a([A.ayM(s,"Tibetan Word",B.G2),B.ji,A.ayM(r,"Synonyms (Comma Separated)",B.mm)],o),B.bW,B.bx,B.dZ),l)
+r=A.ahx(A.qP(A.a([A.ayM(s,"Tibetan Word",l,B.G2),B.ji,A.ayM(r,"Tibetan Synonyms",4,B.mm)],o),B.bW,B.bx,B.dZ),l)
 s=t.z
 n=A.lh(B.ej,A.nM(A.xJ(q),s),l)
 A.op(q,A.vI(A.a([n,A.lh(A.dQ(a?"Edit":"Add",l,l,l,l,l,l),new A.ab3(m,a,b),l)],o),r,p),s)},
@@ -92048,8 +92049,8 @@ $0(){var s=$.bQ(),r=t.z
 A.op(s,A.vI(A.a([A.lh(B.ej,A.nM(A.xJ(s),r),null)],t.p),B.a6H,B.a6I),r)},
 $S:0}
 A.Jw.prototype={
-V(a){var s=null
-return A.aBX(!1,this.c,A.azX(s,s,s,B.KC,s,s,s,s,!0,new A.hS(4,A.o_(8),new A.b6(B.eE,1,B.A,-1)),s,s,s,s,s,s,s,s,s,s,s,new A.hS(4,A.o_(8),new A.b6(B.eE,2,B.A,-1)),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s,s,s,s,s,s,s,s),s,s,s,s,this.e)}}
+V(a){var s=this,r=null
+return A.aBX(!1,s.c,A.azX(r,r,r,B.KC,r,r,r,r,!0,new A.hS(4,A.o_(8),new A.b6(B.eE,1,B.A,-1)),r,r,r,r,r,r,r,r,r,r,r,new A.hS(4,A.o_(8),new A.b6(B.eE,2,B.A,-1)),r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s.d,r,r,r,r,r,r,r,r,r,r,r,r,r),r,s.f,r,r,s.e)}}
 A.r_.prototype={
 V(a){var s=null,r=A.dQ(this.d,s,s,s,s,s,s)
 return A.avd(s,A.azP(this.c,s),s,s,s,r,s)}}
@@ -98346,8 +98347,8 @@ B.a31=new A.f7(0,"none")
 B.a32=new A.f7(1,"unspecified")
 B.a33=new A.f7(10,"route")
 B.a34=new A.f7(11,"emergencyCall")
-B.G1=new A.f7(12,"newline")
-B.mm=new A.f7(2,"done")
+B.mm=new A.f7(12,"newline")
+B.G1=new A.f7(2,"done")
 B.a35=new A.f7(3,"go")
 B.a36=new A.f7(4,"search")
 B.a37=new A.f7(5,"send")
